@@ -64,6 +64,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           script: |
             cd /var/www/html/
-            sudo git checkout
-            sudo git pull origin
+            sudo git checkout -f
+            sudo git pull
             
